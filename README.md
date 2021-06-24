@@ -1,7 +1,7 @@
 # Introduction
 
-## Links
+This sample app displays a list of blobs in a container.
 
-* <https://blog.johnnyreilly.com/2021/01/14/azure-easy-auth-and-roles-with-dotnet-and-core/>
-* <https://github.com/MaximRouiller/MaximeRouiller.Azure.AppService.EasyAuth>
-* <https://www.benday.com/2018/05/21/walkthrough-part-5-asp-net-core-claims-based-security-using-azure-app-authentication-the-auth-me-service-endpoint/>
+A SAS Uri is generated to access the blob, either by the web app or a logic app.
+
+To use the web app to generate the SAS Uri set the value of `SAS_GENERATION_METHOD` in your app settings to `webapp`, to use the logic app, set it to `logicapp`.
