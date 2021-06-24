@@ -13,8 +13,9 @@ Scratch.md
 *.vscode
 swagger.json
 *.parameters.json
+[Pp]roperties/
 
-# Bicept
+# Bicep
 
 # Terraform
 *.tfstate
