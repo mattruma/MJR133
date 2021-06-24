@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h1>Home</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th style="width:1px;"></th>
+            <th style="width:1px;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var file in this.Model.Files)
+        {
+            <tr>
+                <td><a href="@file.Uri.ToString()">@file.BlobItem.Name</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
